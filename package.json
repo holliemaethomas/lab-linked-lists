@@ -1,0 +1,27 @@
+{
+  "name": "linked-list",
+  "version": "1.0.0",
+  "description": "![cf](http://i.imgur.com/7v5ASc8.png) Linked List Data Structure ================================================================",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage --verbose",
+    "watch": "jest --coverage --verbose --watchAll"
+  },
+  "author": "hollie thomas",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^22.4.4"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holliemaethomas/lab-linked-lists.git"
+  },
+  "bugs": {
+    "url": "https://github.com/holliemaethomas/lab-linked-lists/issues"
+  },
+  "homepage": "https://github.com/holliemaethomas/lab-linked-lists#readme"
+}
