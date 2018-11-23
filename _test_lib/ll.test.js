@@ -30,13 +30,7 @@ describe('Linked List', () => {
     expect(nextValue).toEqual(list.head.value);
   }); 
   
-  it('insert after()', () => {
-    let list = new LL();
-    let value = Number;
-    let newValue = Number;
-    list.insertAfter(value, newValue);
-    expect(list.head.value).toEqual(newValue);
-  })
+ 
 
   
 });
