@@ -1,22 +1,29 @@
 {
-  "name": "linked-list",
+  "name": "lab-linked-lists",
   "version": "1.0.0",
-  "description": "![cf](http://i.imgur.com/7v5ASc8.png) Linked List Data Structure ================================================================",
+  "description": "linked list labs",
   "main": "index.js",
-  "scripts": {
-    "test": "jest --coverage --verbose",
-    "watch": "jest --coverage --verbose --watchAll"
-  },
-  "author": "hollie thomas",
-  "license": "ISC",
-  "dependencies": {
-    "jest": "^23.6.0"
-  },
   "directories": {
     "lib": "lib"
   },
-    "jest": {
-      "testEnvironment": "node"
-    }
-  }
-  
+  "dependencies": {
+    "jest": "^23.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest --verbose --coverage",
+    "test-watch": "jest --verbose --coverage --watchAll",
+    "lint": "eslint **/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holliemaethomas/lab-linked-lists.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/holliemaethomas/lab-linked-lists/issues"
+  },
+  "homepage": "https://github.com/holliemaethomas/lab-linked-lists#readme"
+}

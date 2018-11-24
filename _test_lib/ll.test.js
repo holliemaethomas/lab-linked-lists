@@ -1,45 +1,49 @@
 
 'use strict';
 
-let LL = require ('../lib/ll.js');
+let LL = require('../lib/ll.js');
+let list = new LL();
+list.append(11);
+list.append(22);
+list.append(33);
 
 describe('Linked List', () => {
-
   it('constructor()', () => {
     let list = new LL();
     expect(list.head).toBeNull();
   });
 
   it('append()', () => {
-    let list = new LL();
-    let firstValue = 'First One';
-    list.append(firstValue);
-    expect(list.head.value).toEqual(firstValue);
-    let newValue = 'value';
-    list.append(newValue);
-    expect(list.head.value).toEqual(firstValue);
-    let nextPlace = '';
-    list.append(nextPlace);
-
+    console.log(list);
+    expect(list.head.value).toEqual(11);
+    expect(list.head.next.value).toEqual(22);
+    expect(list.head.next.next.value).toEqual(33);
   });
 
-  it('prepend()', () => {
-    let list = new LL();
-    let firstValue = 'first Value';
-    List.prepend(firstValue);
-    let nextValue = 'next Value';
-    list.prepend(nextValue);
-    expect(nextValue).toEqual(list.head.value);
+  it('prepend()', () => { 
+    list.prepend(44);
+    console.log(list);
+    expect(list.head.next.value).toEqual(11);
+    expect(list.head.next.next.value).toEqual(22);
+    expect(list.head.value).toEqual(44);
   });
 
   it('reverse()', () => {
-    let list = new LL();
-    expect(curr.next).toEqual(prev);
+    list.reverse();
+    expect(list.head.value).toEqual(33);
+    expect(list.head.next.value).toEqual(22);
+    expect(list.head.next.next.value).toEqual(11);
   });
 
   it('remove()', () => {
-    let list = new LL();
-    expect(value).toEqual(null);
+    let value = 33;
+    list.remove(value);
+    expect(list.head.value).toEqual(22);
+  });
+  
+  it('remove()', () => {
+    list.remove(11);
+    expect(list.head.value).toEqual(22);
 
   });
 });
