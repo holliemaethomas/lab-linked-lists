@@ -10,18 +10,13 @@
   "author": "hollie thomas",
   "license": "ISC",
   "dependencies": {
-    "jest": "^22.4.4"
+    "jest": "^23.6.0"
   },
   "directories": {
     "lib": "lib"
   },
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/holliemaethomas/lab-linked-lists.git"
-  },
-  "bugs": {
-    "url": "https://github.com/holliemaethomas/lab-linked-lists/issues"
-  },
-  "homepage": "https://github.com/holliemaethomas/lab-linked-lists#readme"
-}
+    "jest": {
+      "testEnvironment": "node"
+    }
+  }
+  

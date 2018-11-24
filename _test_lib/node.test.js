@@ -1,11 +1,11 @@
 'use strict';
 
-const Node = require('../lib/node.js');
+const Node = require('../lib/node');
 
 describe ('Node Module', () => {
   it('constructor()', () => {
     let value = Number;
-    led node = new Node(value);
+    let node = new Node(value);
     expect('node.value').toEqual(value);
     expect('node.next').toBeNull();
   });
